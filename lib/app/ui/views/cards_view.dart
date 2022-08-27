@@ -63,15 +63,16 @@ class CardsView extends StatelessWidget {
                 vertical: 15.0,
               ),
               decoration: BoxDecoration(
-                  color: const Color.fromRGBO(153, 0, 255, 1.0),
-                  borderRadius: BorderRadius.circular(20.0),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Color.fromRGBO(153, 0, 255, 1.0),
-                      blurRadius: 10.5,
-                      spreadRadius: 0.1,
-                    ),
-                  ]),
+                color: const Color.fromRGBO(153, 0, 255, 1.0),
+                borderRadius: BorderRadius.circular(20.0),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color.fromRGBO(153, 0, 255, 1.0),
+                    blurRadius: 10.5,
+                    spreadRadius: 0.1,
+                  ),
+                ],
+              ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,

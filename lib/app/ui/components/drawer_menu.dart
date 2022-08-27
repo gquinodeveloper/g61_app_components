@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:g61_app_componentes/app/ui/views/alerts_view.dart';
 import 'package:g61_app_componentes/app/ui/views/avatars_view.dart';
+import 'package:g61_app_componentes/app/ui/views/cards_view.dart';
+import 'package:g61_app_componentes/app/ui/views/listview_view.dart';
 
 class DrawerMenu extends StatelessWidget {
   const DrawerMenu({Key? key}) : super(key: key);
@@ -86,6 +88,14 @@ class DrawerMenu extends StatelessWidget {
               ),
               Divider(indent: 15.0, endIndent: 15.0),
               ListTile(
+                onTap: () {
+                  Navigator.push<void>(
+                    context,
+                    MaterialPageRoute<void>(
+                      builder: (BuildContext context) => const CardsView(),
+                    ),
+                  );
+                },
                 leading: Icon(Icons.card_giftcard_outlined),
                 title: Text("Cards"),
                 trailing: Icon(
@@ -95,6 +105,14 @@ class DrawerMenu extends StatelessWidget {
               ),
               Divider(indent: 15.0, endIndent: 15.0),
               ListTile(
+                onTap: () {
+                  Navigator.push<void>(
+                    context,
+                    MaterialPageRoute<void>(
+                      builder: (BuildContext context) => const ListViewView(),
+                    ),
+                  );
+                },
                 leading: Icon(Icons.list_alt),
                 title: Text("ListView"),
                 trailing: Icon(

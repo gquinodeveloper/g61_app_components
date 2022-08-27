@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:g61_app_componentes/app/ui/views/alerts_view.dart';
 import 'package:g61_app_componentes/app/ui/views/avatars_view.dart';
 import 'package:g61_app_componentes/app/ui/views/cards_view.dart';
+import 'package:g61_app_componentes/app/ui/views/expanded_view.dart';
 import 'package:g61_app_componentes/app/ui/views/home_view.dart';
+import 'package:g61_app_componentes/app/ui/views/inputs_view.dart';
+import 'package:g61_app_componentes/app/ui/views/listview_builder_view.dart';
 import 'package:g61_app_componentes/app/ui/views/listview_view.dart';
+import 'package:g61_app_componentes/app/ui/views/stacks_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +27,9 @@ class MyApp extends StatelessWidget {
       //home: const ListViewView(),
       //home: const AvatarsView(),
       //home: const CardsView(),
-      home: const HomeView()
+      //home: const HomeView()
+      //home: const ListViewBuilderView(),
+      home: const InputsView(),
     );
   }
 }

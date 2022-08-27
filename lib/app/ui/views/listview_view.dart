@@ -9,7 +9,24 @@ class ListViewView extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Contats"),
       ),
-      body: ListView(
+      body: Container(
+        width: double.infinity,
+        height: 120.0,
+        color: Colors.transparent,
+        child: ListView(
+          scrollDirection: Axis.horizontal,
+          children: [
+            _historyUser(),
+            _historyUser(),
+            _historyUser(),
+            _historyUser(),
+            _historyUser(),
+            _historyUser(),
+            _historyUser(),
+          ],
+        ),
+      ),
+      /* body: ListView(
         children: const [
           ListTile(
             leading: CircleAvatar(
@@ -73,6 +90,22 @@ class ListViewView extends StatelessWidget {
             title: Text("Gustavo Quino"),
             subtitle: Text("958346375"),
           ),
+        ],
+      ), */
+    );
+  }
+
+  Widget _historyUser() {
+    return Container(
+      margin: const EdgeInsets.only(left: 20.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: const [
+          CircleAvatar(
+            radius: 30.0,
+          ),
+          SizedBox(height: 10.0),
+          Text("Gustavo"),
         ],
       ),
     );

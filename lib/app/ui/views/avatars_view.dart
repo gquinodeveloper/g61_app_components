@@ -15,9 +15,15 @@ class AvatarsView extends StatelessWidget {
         ),
         title: const Text("Gustavo Quino"),
         actions: const [
-          Icon(Icons.notification_important, color: Colors.black,),
+          Icon(
+            Icons.notification_important,
+            color: Colors.black,
+          ),
           SizedBox(width: 15.0),
-          Icon(Icons.settings, color: Colors.black,),
+          Icon(
+            Icons.settings,
+            color: Colors.black,
+          ),
           SizedBox(width: 15.0),
         ],
       ),
@@ -27,7 +33,7 @@ class AvatarsView extends StatelessWidget {
             CircleAvatar(
               radius: 25.0,
               backgroundColor: Colors.pink,
-              //backgroundImage: NetworkImage("https://reqres.in/img/faces/7-image.jpg") ,
+              //backgroundImage: NetworkImage("https://reqres.in/img/faces/7-image.jpg"),
               backgroundImage: AssetImage("assets/i.jpeg"),
             ),
             SizedBox(width: 10.0),
